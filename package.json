@@ -6,6 +6,14 @@
   "main": "dist/aimless.js",
   "module": "dist/aimless.module.js",
   "types": "dist/aimless.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/aimless.d.ts",
+      "import": "./dist/aimless.module.js",
+      "require": "./dist/aimless.js"
+    },
+    "./*": "./*"
+  },
   "license": "MIT",
   "repository": "ChrisCavs/aimless.js",
   "author": {
